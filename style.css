@@ -1,0 +1,84 @@
+.bg--ebony-clay {
+  background-color: #252b42;
+}
+
+.bg--picton-blue {
+  background-color: #23a6f0;
+}
+
+.bg--jordy-blue {
+    background-color: #8EC2F2;
+}
+
+.text--piction-blue {
+  color: #23a6f0;
+}
+
+.container {
+    padding: 80px 0;
+}
+
+.list-simple {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.image-background {
+  background-image: linear-gradient(
+      89.85deg,
+      #000000 0.13%,
+      #000000 0.14%,
+      rgba(0, 0, 0, 0)
+    ),
+    url("./images/hero.png");
+  background-position: center;
+  background-size: cover;
+  padding: 80px 0 5px 0;
+}
+
+
+.image-background > div {
+  max-width: 418px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.image-background > div h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+.image-background > div h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+.image-background button {
+  display: block;
+  width: max-content;
+  padding: 10px 36px;
+}
+
+.image-background__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 25px;
+}
+
+.feartures-container {
+    /* max-width:329px; */
+}
