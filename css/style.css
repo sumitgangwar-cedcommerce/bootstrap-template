@@ -211,7 +211,7 @@ header {
     gap: 30px;
 }
 
-.testimonial__list li{
+.testimonial__list > li{
     max-width: 450px;
     padding: 30px 40px;
     gap:15px;
@@ -248,13 +248,37 @@ header {
 }
 
 .star {
-    cursor: pointer;
-    width: 22px;
-    height: 22px;
-    background-color: red;
-    /* -webkit-clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%); */
-    clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%);
+    position: relative;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0.9em;
+    margin-right: 0.9em;
+    margin-bottom: 1.2em;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0.7em solid #FC0;
+    border-left: 0.3em solid transparent;
+    font-size: 14px;
 }
+
+.star::before, .star::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0.6em;
+    left: -1em;
+    border-right: 1em solid transparent;
+    border-bottom: 0.7em solid #FC0;
+    border-left: 1em solid transparent;
+    transform: rotate(-35deg);
+}
+
+.star::after {
+    transform: rotate(35deg);
+}
+
 
 /* industry */
 
